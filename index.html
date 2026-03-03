@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokeVault — La boutique des collectionneurs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bangers&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">&#9670;</span>
+        PokeVault
+      </a>
+      <ul class="nav__links">
+        <li><a href="#features">Pourquoi nous</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#sets">Sets</a></li>
+        <li><a href="#community">Communauté</a></li>
+      </ul>
+      <a href="#cta" class="btn btn--nav">Rejoindre</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__badge">✦ Pour les vrais collectionneurs</span>
+      <h1 class="hero__title">
+        Attrapez<br />
+        <span class="hero__title-highlight">l'excellence</span>,<br />
+        une carte à la fois.
+      </h1>
+      <p class="hero__desc">
+        PokeVault est la destination ultime des passionnés de cartes Pokémon.
+        Achetez, vendez, gradez et rejoignez une communauté de collectionneurs passionnés.
+      </p>
+      <div class="hero__actions">
+        <a href="#collection" class="btn btn--primary">Explorer la collection</a>
+        <a href="#community" class="btn btn--ghost">Notre communauté</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="12000">0</span><span>+</span>
+          <span class="hero__stat-label">Cartes en stock</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="4800">0</span><span>+</span>
+          <span class="hero__stat-label">Collectionneurs</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="98">0</span><span>%</span>
+          <span class="hero__stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__cards">
+      <div class="card-showcase">
+        <div class="card-item card-item--back" data-tilt>
+          <div class="card-item__inner">
+            <div class="card-item__shine"></div>
+            <div class="card-item__type">Feu</div>
+            <div class="card-item__name">Dracaufeu</div>
+            <div class="card-item__hp">HP 200</div>
+            <div class="card-item__emoji">&#129368;</div>
+            <div class="card-item__rarity">&#9733; Holo Rare</div>
+          </div>
+        </div>
+        <div class="card-item card-item--mid" data-tilt>
+          <div class="card-item__inner card-item__inner--water">
+            <div class="card-item__shine"></div>
+            <div class="card-item__type">Eau</div>
+            <div class="card-item__name">Leviator</div>
+            <div class="card-item__hp">HP 180</div>
+            <div class="card-item__emoji">&#128022;</div>
+            <div class="card-item__rarity">&#9733;&#9733; Ultra Rare</div>
+          </div>
+        </div>
+        <div class="card-item card-item--front" data-tilt>
+          <div class="card-item__inner card-item__inner--psychic">
+            <div class="card-item__shine"></div>
+            <div class="card-item__type">Psy</div>
+            <div class="card-item__name">Mewtwo</div>
+            <div class="card-item__hp">HP 220</div>
+            <div class="card-item__emoji">&#128049;</div>
+            <div class="card-item__rarity">&#9733;&#9733;&#9733; Secret Rare</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Découvrir</span>
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nos avantages</span>
+        <h2 class="section-title">Pourquoi choisir PokeVault ?</h2>
+        <p class="section-desc">Tout ce dont un collectionneur sérieux a besoin, au même endroit.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--yellow">&#128081;</div>
+          <h3>Authenticité garantie</h3>
+          <p>Chaque carte est vérifiée par nos experts avant mise en vente. Zéro compromis sur l'authenticité.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--blue">&#128202;</div>
+          <h3>Cotations en temps réel</h3>
+          <p>Accédez aux prix du marché actualisés en permanence pour ne jamais sur ou sous-payer.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--red">&#127759;</div>
+          <h3>Livraison sécurisée</h3>
+          <p>Emballage premium anti-choc, suivi en temps réel et assurance incluse sur chaque commande.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--green">&#127942;</div>
+          <h3>Grading PSA / BGS</h3>
+          <p>Service de grading professionnel pour valoriser vos cartes les plus précieuses.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--purple">&#128101;</div>
+          <h3>Communauté active</h3>
+          <p>Forums, tournois, échanges entre collectionneurs — une vraie famille autour de la passion.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--orange">&#128274;</div>
+          <h3>Paiement sécurisé</h3>
+          <p>Transactions protégées, plusieurs moyens de paiement et politique de retour claire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLLECTION ===== -->
+  <section class="collection" id="collection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Notre catalogue</span>
+        <h2 class="section-title">Cartes populaires en ce moment</h2>
+        <p class="section-desc">Des classiques aux éditions limitées, trouvez la perle rare.</p>
+      </div>
+      <div class="collection__filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="holo">Holo</button>
+        <button class="filter-btn" data-filter="ultra">Ultra Rare</button>
+        <button class="filter-btn" data-filter="vintage">Vintage</button>
+        <button class="filter-btn" data-filter="promo">Promo</button>
+      </div>
+      <div class="collection__grid">
+        <div class="poke-card reveal" data-category="holo ultra">
+          <div class="poke-card__img poke-card__img--charizard">
+            <span class="poke-card__badge">Holo Rare</span>
+            <div class="poke-card__emoji">&#129368;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Base Set 1999</span>
+              <span class="poke-card__grade">PSA 9</span>
+            </div>
+            <h3 class="poke-card__name">Dracaufeu #4/102</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 3 800</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+        <div class="poke-card reveal" data-category="vintage holo">
+          <div class="poke-card__img poke-card__img--pikachu">
+            <span class="poke-card__badge">Illus. Rare</span>
+            <div class="poke-card__emoji">&#9889;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Jungle 1999</span>
+              <span class="poke-card__grade">PSA 10</span>
+            </div>
+            <h3 class="poke-card__name">Pikachu #60/64</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 950</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+        <div class="poke-card reveal" data-category="ultra promo">
+          <div class="poke-card__img poke-card__img--mewtwo">
+            <span class="poke-card__badge">Secret Rare</span>
+            <div class="poke-card__emoji">&#128049;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Base Set 1999</span>
+              <span class="poke-card__grade">BGS 9.5</span>
+            </div>
+            <h3 class="poke-card__name">Mewtwo #10/102</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 1 200</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+        <div class="poke-card reveal" data-category="holo">
+          <div class="poke-card__img poke-card__img--blastoise">
+            <span class="poke-card__badge">Holo Rare</span>
+            <div class="poke-card__emoji">&#128022;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Base Set 1999</span>
+              <span class="poke-card__grade">PSA 8</span>
+            </div>
+            <h3 class="poke-card__name">Tortank #2/102</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 720</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+        <div class="poke-card reveal" data-category="ultra promo">
+          <div class="poke-card__img poke-card__img--lugia">
+            <span class="poke-card__badge">Ultra Rare</span>
+            <div class="poke-card__emoji">&#129409;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Neo Genesis 2000</span>
+              <span class="poke-card__grade">PSA 9</span>
+            </div>
+            <h3 class="poke-card__name">Lugia #9/111</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 2 400</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+        <div class="poke-card reveal" data-category="vintage promo">
+          <div class="poke-card__img poke-card__img--mew">
+            <span class="poke-card__badge">Promo</span>
+            <div class="poke-card__emoji">&#128048;</div>
+          </div>
+          <div class="poke-card__body">
+            <div class="poke-card__meta">
+              <span class="poke-card__set">Promo WB 1999</span>
+              <span class="poke-card__grade">PSA 10</span>
+            </div>
+            <h3 class="poke-card__name">Mew Promo #8</h3>
+            <div class="poke-card__price-row">
+              <span class="poke-card__price">€ 580</span>
+              <button class="poke-card__btn">Voir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection__more">
+        <a href="#" class="btn btn--primary">Voir toute la collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SETS BANNER ===== -->
+  <section class="sets" id="sets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nos sets</span>
+        <h2 class="section-title">Les extensions disponibles</h2>
+      </div>
+      <div class="sets__track-wrapper">
+        <div class="sets__track">
+          <div class="set-pill">Base Set</div>
+          <div class="set-pill">Jungle</div>
+          <div class="set-pill">Fossil</div>
+          <div class="set-pill">Neo Genesis</div>
+          <div class="set-pill">Gym Heroes</div>
+          <div class="set-pill">Skyridge</div>
+          <div class="set-pill">Aquapolis</div>
+          <div class="set-pill">EX Ruby & Sapphire</div>
+          <div class="set-pill">Hidden Fates</div>
+          <div class="set-pill">Celebrations</div>
+          <div class="set-pill">Crown Zenith</div>
+          <div class="set-pill">Paldea Evolved</div>
+          <div class="set-pill">Obsidian Flames</div>
+          <div class="set-pill">Twilight Masquerade</div>
+          <!-- Duplicates for infinite scroll -->
+          <div class="set-pill">Base Set</div>
+          <div class="set-pill">Jungle</div>
+          <div class="set-pill">Fossil</div>
+          <div class="set-pill">Neo Genesis</div>
+          <div class="set-pill">Gym Heroes</div>
+          <div class="set-pill">Skyridge</div>
+          <div class="set-pill">Aquapolis</div>
+          <div class="set-pill">EX Ruby & Sapphire</div>
+          <div class="set-pill">Hidden Fates</div>
+          <div class="set-pill">Celebrations</div>
+          <div class="set-pill">Crown Zenith</div>
+          <div class="set-pill">Paldea Evolved</div>
+          <div class="set-pill">Obsidian Flames</div>
+          <div class="set-pill">Twilight Masquerade</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="community">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Témoignages</span>
+        <h2 class="section-title">Ce que disent nos collectionneurs</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"J'ai trouvé mon Dracaufeu Base Set PSA 10 à un prix imbattable. L'authenticité est au rendez-vous, je recommande sans hésiter !"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">LM</div>
+            <div>
+              <strong>Lucas M.</strong>
+              <span>Collectionneur depuis 2015</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Le service grading est top, j'ai envoyé 15 cartes et tout est revenu parfaitement traité. La communauté Discord est super active aussi."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--blue">SC</div>
+            <div>
+              <strong>Sophie C.</strong>
+              <span>Collectionneuse vintage</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Les cotations en temps réel m'ont sauvé plusieurs fois. J'ai évité de surpayer et même revendu des cartes au bon moment grâce à PokeVault."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--green">AR</div>
+            <div>
+              <strong>Antoine R.</strong>
+              <span>Investisseur & collectionneur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="cta">
+    <div class="cta__bg">
+      <div class="cta__orb cta__orb--1"></div>
+      <div class="cta__orb cta__orb--2"></div>
+    </div>
+    <div class="container">
+      <div class="cta__inner reveal">
+        <span class="section-tag">Rejoignez-nous</span>
+        <h2 class="cta__title">Prêt à compléter votre collection ?</h2>
+        <p class="cta__desc">Inscrivez-vous gratuitement et accédez à plus de 12 000 cartes, aux alertes de prix et à notre communauté exclusive.</p>
+        <form class="cta__form" id="ctaForm">
+          <input type="email" placeholder="Votre adresse email" class="cta__input" required />
+          <button type="submit" class="btn btn--primary">Commencer gratuitement</button>
+        </form>
+        <p class="cta__legal">Aucune carte de crédit requise · Annulation à tout moment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <span class="nav__logo-icon">&#9670;</span>
+            PokeVault
+          </a>
+          <p>La boutique et la communauté de référence pour les collectionneurs de cartes Pokémon en France.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Discord">D</a>
+            <a href="#" class="footer__social" aria-label="Instagram">I</a>
+            <a href="#" class="footer__social" aria-label="Twitter">X</a>
+            <a href="#" class="footer__social" aria-label="YouTube">Y</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="#">Toutes les cartes</a></li>
+            <li><a href="#">Vintage</a></li>
+            <li><a href="#">Ultra Rares</a></li>
+            <li><a href="#">Lots & Displays</a></li>
+            <li><a href="#">Accessoires</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Grading PSA/BGS</a></li>
+            <li><a href="#">Cotations live</a></li>
+            <li><a href="#">Alertes de prix</a></li>
+            <li><a href="#">Rachat de collection</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>À propos</h4>
+          <ul>
+            <li><a href="#">Notre histoire</a></li>
+            <li><a href="#">Communauté</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">CGV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PokeVault. Tous droits réservés.</p>
+        <p>Pokémon est une marque déposée de Nintendo / Game Freak / Creatures.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">Bienvenue dans la communauté PokeVault !</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
